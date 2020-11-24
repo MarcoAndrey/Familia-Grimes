@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Familia Grimes</title>
+	<link rel="stylesheet" href="../Contraseña Win/Validación Formulario_files/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="Familia">
+	<script src="../Contraseña Win/Validación Formulario_files/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="Familia">
+	</script>
+	<script src="../Contraseña Win/Validación Formulario_files/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="Familia">
+	</script>
+	<script src="../Contraseña Win/Validación Formulario_files/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="Familia">
+	</script>
+	<link rel="stylesheet" type="text/css" href="./capitulos/estilo.css">
+	<link rel="stylesheet" type="text/css" href="./capitulos/game.css">
+	<link rel="shortcut icon" href="img/icono-marco-favicon.png" type="image/x-icon">
+
+	<style>
+		.bg {
+			background-image: url("img/bosque.png");
+		}
+	</style>
+
+
+</head>
+
+<body class="bg">
+
+
+
+	<section class="cuerpo_juego_dark cuerpo_juego_partida">
+		<!-- end crono-->
+		<h1 style="font-size: 3em;">
+			<br>
+			<div>CAPÍTULO 1: ¿Donde estoy?</div>
+		</h1>
+
+		<!-- modal -->
+		<script>
+			function validarFormulario() {
+				var txtNombre = document.getElementById('nombre').value;
+				//Test campo obligatorio
+				if (txtNombre == null || txtNombre != 'Lucia' || txtNombre.length == 0) {
+					$('#modalError').modal('show');
+					return false;
+				}
+				return true;
+			}
+		</script>
+		</head>
+
+		<body>
+			<form action="../capitulos/Familia Grimes Cap 2.html" onsubmit="return validarFormulario()">
+				<label for="nombre">
+					<span>Nombre:</span>
+				</label>
+				<input id="nombre" name="nombre" type="text"> <button type="submit"
+					class="sala_button btn game_button_red_dark" style="display: inline;"
+					name="envio_respuesta">Abrir</button></p>
+
+				<p style="margin-top:5px; font-style: italic;"></p><br>
+				<hr>
+				<div class="game_content" style=""><br>
+					<p id='visor_imagenes'>
+						<b>Llegando la noche una periodista se llenó de valor y logró escabullirse por la casa.
+							entre los escombros avanzó hasta llegar a una parte de la casa separada del resto y lo
+							que vio la aterrorizo que en un descuido calló dentro de la casa.<br><br>La periodista
+							perdió el conocimiento al caer, al despertar vio que estaba en alguna de las
+							habitaciones de la casa, parecía ser la habitación de una de las hijas, estaba muy
+							oscuro y no se podía ver nada en el piso, prendió un lampara que estaba cerca y miró de
+							lado a lado vió un cuadro, eran las hermanas, se veían felices, siguió observando y se
+							dió cuenta que estaba encerrada bajo llave mientras que a lo lejos se escuchaban
+							gritos…<br><br>
+							Estó la inquieto y empezó a buscar desesperadamente, cuando vio en la cabecera de la
+							cama a un oso con algo escrito<br><br>
+						</b>
+					</p>
+				</div>
+
+				<ul class="galeria">
+					<a href="#img1"><img src="img/Lucia2.png"></a>
+					<div class="modal" id="img1">
+						<br><br><br><br>
+						<div class="imagen">
+							<br>
+							<a href="#img2"><img src="img/Lucia.png"></a>
+							<br>
+						</div>
+						<!--<a class="cerrar" href=""></a>-->
+					</div>
+				</ul>
+
+				<!--<div class="game_content"><img src="img/Lucia2.png" alt="image error, reload"></div><br>-->
+				<a href="../capitulos/cap1-pista1.html" style="text-decoration:none;"
+					class="game_button game_button_red_dark btn btn_space">Pista</a>				
+				<a href="../capitulos/jaja.html" style="text-decoration:none;"
+					class="game_button game_button_red_dark btn btn_space">Abandonar</a>
+			</form>
+			<audio src="../capitulos/img/MELANCHOLIA vol.mp3" autoplay="autoplay"></audio>
+	</section>
+
+	<div class="modal" id="modalError">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">
+						<FONT COLOR="red"><strong>JA JA JA</strong></FONT>
+					</h4>
+					<button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					No tuviste suerte la contraseña no es valida
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./capitulo 2_files/countdown.js"></script>
+	<script type="text/javascript" src="./capitulo 2_files/countdown_init.js"></script>
+
+
+</body>
+
+</html>

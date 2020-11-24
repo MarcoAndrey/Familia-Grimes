@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Familia Grimes</title>
+	<link rel="stylesheet" href="../Contraseña Win/Validación Formulario_files/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="Familia">
+	<script src="../Contraseña Win/Validación Formulario_files/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="Familia">
+	</script>
+	<script src="../Contraseña Win/Validación Formulario_files/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="Familia">
+	</script>
+	<script src="../Contraseña Win/Validación Formulario_files/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="Familia">
+	</script>
+	<link rel="stylesheet" type="text/css" href="./capitulos/estilo.css">
+	<link rel="stylesheet" type="text/css" href="./capitulos/game.css">
+
+	<link rel="shortcut icon" href="img/icono-marco-favicon.png" type="image/x-icon">
+
+	<style>
+		.bg {
+			background-image: url("img/bosque.png");
+		}
+	</style>
+
+
+</head>
+
+<body class="bg">
+
+
+
+	<section class="cuerpo_juego_dark cuerpo_juego_partida">
+		<!-- end crono-->
+		<h1 style="font-size: 3em;">
+			<br>
+			<div>CAPÍTULO 2: ¿Cuando?</div>
+		</h1>
+
+		<!-- modal -->
+		<script>
+			function validarFormulario() {
+				var txtNombre = document.getElementById('nombre').value;
+				//Test campo obligatorio
+				if (txtNombre == null || txtNombre != '29/10/1982' || txtNombre.length == 0) {
+					$('#modalError').modal('show');
+					return false;
+				}
+				return true;
+			}
+		</script>
+		</head>
+
+		<body>
+			<form action="../capitulos/Familia Grimes Cap 3.html" onsubmit="return validarFormulario()">
+				<label for="nombre">
+					<span>Fecha:</span>
+				</label>
+				<input id="nombre" name="nombre" type="text"> <button type="submit"
+					class="sala_button btn game_button_red_dark" style="display: inline;"
+					name="envio_respuesta">Abrir</button></p>
+
+				<p style="margin-top:5px; font-style: italic;"></p><br>
+				<hr>
+				<div class="game_content" style=""><br>
+					<p id='visor_imagenes'>
+						<b>Al salir de la habitación camino hacia el pasillo, vio tres puertas, de las cuales dos
+							estaban cerradas
+							y una habitación estaba abierta, en una de las habitaciones había un olor
+							extraño y en el piso se veían manchas de sangre, se asustó y corrió hacia la salida,
+							pero al llegar a las escaleras encontró una reja donde había una nota escrita:<br>
+							<FONT COLOR="red"><strong><em><br>la llave la
+										encontraras en una de las habitaciones…</em></strong> </FONT><br><br>La
+							periodista volvió y
+							observo
+							las puertas, y se dio cuenta que estaban marcadas con sangre, la primera puerta tenia el
+							nombre de Andrea, la segunda puerta Sofia y la ultima puerta Maria…<br><br>La
+							periodista entro a la habitación que se encontraba abierta, al entrar vio un televisor
+							prendido y una silla con una carpeta, que llevaba el nombre de Andrea una de las hijas
+							del señor Grimes, al abrir la carpeta vio unos papeles y una grabadora que llevaba una
+							nota que decía
+							<FONT COLOR="red"><strong>Reprodúceme</strong> </FONT> <br><br>En los documentos
+							encontró un reportaje que ella había hecho hace dos años,
+							sobre la desaparición de un grupo de policías que estaban de tras de una pista de
+							descubrir algo aterrador sobre la Familia Grimes, pero el caso quedo cerrado por falta
+							de pruebas.
+							<br><br>
+					</p>
+				</div>
+
+				<iframe
+					src='https://www.4shared.com/web/embed/audio/file/32zt3sNniq?type=MINI&widgetWidth=530&showCover=true&playlistHeight=0&widgetRid=370460625016'
+					style='overflow:hidden;height:60px;width:530px;border: 0;margin:0;'></iframe>
+
+				<ul class="galeria">
+					<a href="#img1"><img src="img/Fecha2.png"></a>
+					<div class="modal" id="img1">
+						<br><br><br><br>
+						<div class="imagen">
+							<br>
+							<a href="#img2"><img src="img/Fecha.png"></a>
+							<br>
+						</div>
+						<!--<a class="cerrar" href=""></a>-->
+					</div>
+				</ul>
+				<a href="../capitulos/cap2-pista1.html" style="text-decoration:none;"
+					class="game_button game_button_red_dark btn btn_space">Pista 1</a>
+				<a href="../capitulos/cap2-pista2.html" style="text-decoration:none;"
+					class="game_button game_button_red_dark btn btn_space">Pista 2</a>
+				<a href="../capitulos/jaja.html" style="text-decoration:none;"
+					class="game_button game_button_red_dark btn btn_space">Abandonar</a>
+			</form>
+			<audio src="../capitulos/img/MELANCHOLIA vol.mp3" autoplay="autoplay"></audio>
+
+	</section>
+
+	<div class="modal" id="modalError">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">
+						<FONT COLOR="red"><strong>JA JA JA</strong></FONT>
+					</h4>
+					<button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					No tuviste suerte la contraseña no es valida<br>
+					separa la fecha con una bara ( / )
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./capitulo 2_files/countdown.js"></script>
+	<script type="text/javascript" src="./capitulo 2_files/countdown_init.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Validación Formulario</title>
+  <link rel="stylesheet" href="./Validación Formulario_files/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="Familia">
+  <script src="./Validación Formulario_files/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="Familia">
+  </script>
+  <script src="./Validación Formulario_files/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="Familia">
+  </script>
+  <script src="./Validación Formulario_files/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="Familia">
+  </script>
+
+  <script>
+    function validarFormulario() {
+      var txtUno = document.getElementById('Uno').value;
+      var txtDos = document.getElementById('Dos').value;
+      var txtTres = document.getElementById('Tres').value;
+      var txtCuatro = document.getElementById('Cuatro').value;
+      var txtCinco = document.getElementById('Cinco').value;
+      var txtSeis = document.getElementById('Seis').value;
+
+
+
+      //Texto campo obligatorio
+      if (txtUno == null || txtUno != '0' || txtUno.length == 0) {
+        $('#modalError').modal('show');
+        return false;
+      }
+
+      if (txtDos == null || txtDos != '1' || txtDos.length == 0) {
+        $('#modalError').modal('show');
+        return false;
+      }
+
+      if (txtTres == null || txtTres != '2' || txtTres.length == 0) {
+        $('#modalError').modal('show');
+        return false;
+      }
+
+      if (txtCuatro == null || txtCuatro != '0' || txtCuatro.length == 0) {
+        $('#modalError').modal('show');
+        return false;
+      }
+
+      if (txtCinco == null || txtCinco != '2' || txtCuatro.length == 0) {
+        $('#modalError').modal('show');
+        return false;
+      }
+
+      if (txtSeis == null || txtSeis != '9' || txtCuatro.length == 0) {
+        $('#modalError').modal('show');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <style type="text/css">
+    body {
+      background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.8)), url(img/bosque.jpg) center top fixed no-repeat;
+      background-size: cover;
+      font-family: arial;
+    }
+
+    label h1 {
+      color: white;
+    }
+
+    .centrarIngresoClave {
+      height: 100vh;
+      display: flex;
+    }
+
+    .centrarBoton {
+      margin: auto;
+    }
+
+    .form-control {
+      text-align: center;
+      font-size: 4em;
+      font-weight: 900;
+      background: transparent;
+      color: #fff;
+    }
+
+    .centrarBoton.btn.btn-danger {
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-weight: 500;
+      background: #670606;
+    }
+
+    label {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 0.7em;
+      color: #ff9900;
+    }
+  </style>
+
+  <section class="centrarIngresoClave">
+    <div class="container">
+      <div class="row  h-100">
+        <div class="col-xs-12 col-sm-3 col-md-2">
+        </div>
+        <div class="col-xs-16 col-sm-8 col-md-8 align-self-center">
+
+          <form action="../capitulos/Libre.html" onsubmit="return validarFormulario()">
+            <label for="nombre">
+              <h3 class="text-center"><h4><strong>Digita los seis numeros de las claves obtenidas del capitulo 5 y 6 para escapar</strong></h4>
+              <hr>
+            </label>
+            <div class="row">
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <label>
+                  <h1><strong>G</strong></h1>
+                </label>
+                <input maxlength="1" class="form-control" id="Uno" name="Uno" type="text" autocomplete="off">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <label>
+                  <h1><strong>R</strong></h1>
+                </label>
+                <input maxlength="1" class="form-control" id="Dos" name="Dos" type="text" autocomplete="off">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <label>
+                  <h1><strong>I</strong></h1>
+                </label>
+                <input maxlength="1" class="form-control" id="Tres" name="Tres" type="text" autocomplete="off">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <label>
+                  <h1><strong>M</strong></h1>
+                </label>
+                <input maxlength="1" class="form-control" id="Cuatro" name="Cuatro" type="text" autocomplete="off">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <label>
+                  <h1><strong>E</strong></h1>
+                </label>
+                <input maxlength="1" class="form-control" id="Cinco" name="Cinco" type="text" autocomplete="off">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <label>
+                  <h1><strong>S</strong></h1>
+                </label>
+                <input maxlength="1" class="form-control" id="Seis" name="Seis" type="text" autocomplete="off">
+              </div>
+            </div>
+            <br>
+            <div class="text-center">
+              <input class="centrarBoton btn btn-danger" type="submit" value="Ingresar">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="modalError">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">
+            <FONT COLOR="red"><strong>JA JA JA</strong></FONT>
+          </h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          No tuviste suerte la contraseña no es valida <br> una pista este es el orden de los numeros <FONT COLOR="red"><strong>0 _ _ 0 _ _</strong></FONT><br>completalo 
+          <br>Apresurate el Tiempo se agota.
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <audio src="../capitulos/img/MELANCHOLIA vol.mp3" autoplay="autoplay"></audio>
+
+
+</body>
+
+</html>

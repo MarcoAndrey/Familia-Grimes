@@ -1,0 +1,659 @@
+﻿body,
+html {
+   margin: 0 auto;
+   height: 100%;
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.bg {
+   /* The image used */
+   background-image: url("./../img/bosque.png");
+   /* Full height */
+   height: 50%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.cuerpo_juego {
+   margin: auto;
+   padding-top: 1px;
+   padding-bottom: 80px;
+   background-color: rgba(255, 255, 255, 0.6);
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(220, 220, 220, 0.7);
+   -moz-box-shadow: 0px 0px 10px 0px rgba(220, 220, 220, 0.7);
+   box-shadow: 0px 0px 10px 0px rgba(220, 220, 220, 0.7);
+   min-height: 100%;
+   height: auto;
+   vertical-align: middle !important;
+   position: relative;
+   /*crono*/
+}
+
+.cuerpo_juego_dark {
+   color: #EEEEEE;
+   margin: auto;
+   padding-top: 1px;
+   padding-bottom: 80px;
+   min-height: 100%;
+   height: auto;
+   vertical-align: middle !important;
+   position: relative;
+   /*crono*/
+}
+
+.cuerpo_juego_dark a {
+   color: #EEEEEE;
+}
+
+/* .h800px {
+	width:800px;
+} */
+
+.h800px {
+   width: 59%;
+   min-width: 300px;
+}
+
+.cuerpo_juego label,
+.cuerpo_juego_dark label {
+   text-align: right;
+   padding-right: 8px;
+   width: 15%;
+}
+
+.cuerpo_juego_partida {
+   /*min-width:800px;*/
+   min-width: 300px;
+   width: 80%;
+   /*width:100%;*/
+   max-width: 1280px;
+   text-align: center;
+}
+
+/* .textos {
+	margin:auto;
+	padding-right:40px;
+	padding-left:40px;
+	width:100%;
+} */
+
+.textos {
+   margin: auto;
+   width: 80%;
+}
+
+/*fondo negro transparente solido de texto */
+#visor_imagenes {
+   text-align: none;
+   color: rgba(255, 255, 255, 0.897);
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*add*/
+form {
+   width: 80%;
+   margin: auto;
+}
+
+/**/
+.text_center {
+   text-align: center;
+}
+
+
+.header_left {
+   position: relative;
+   display: inline-block;
+   float: left;
+   width: 15%;
+   height: inherit;
+}
+
+.header_mid {
+   position: relative;
+   display: inline-block;
+   width: 60%;
+   margin: auto;
+   height: inherit;
+}
+
+.header_right {
+   position: relative;
+   display: inline-block;
+   float: right;
+   width: 15%;
+   height: inherit;
+}
+
+.game_header_img {
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+}
+
+.game_header_img img {
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+}
+
+
+
+.game_button_grey:hover {
+   opacity: 1;
+}
+
+/*---------in game--------------*/
+.game_content {
+   position: relative;
+   width: 100%;
+   margin: 0px auto;
+   vertical-align: middle !important;
+}
+
+.game_content img {
+   width: 100%;
+   vertical-align: middle;
+   padding-top: 30px;
+   padding-right: 100px;
+   padding-left: 100px;
+   vertical-align: middle !important;
+}
+
+.game_content p {
+   width: 100%;
+   padding-top: 30px;
+   padding-right: 100px;
+   padding-left: 100px;
+   text-align: justify;
+   vertical-align: middle !important;
+}
+
+.game_content iframe {
+   width: 100%;
+   padding-top: 30px;
+   vertical-align: middle !important;
+   position: relative;
+   padding-right: 100px;
+   padding-left: 100px;
+}
+
+/*------------------------------------Botones personalizables-------------------------------*/
+.game_button {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   padding-top: 4px;
+   padding-bottom: 6px;
+   padding-left: 15px;
+   padding-right: 15px;
+   font-size: 16px;
+   font-family: 'Oswald', sans-serif;
+   color: white;
+   cursor: pointer;
+   /*color:white;*/
+   border: 0;
+   background-color: #ff0000;
+   border-radius: 25px;
+   cursor: pointer;
+   filter: grayscale(30%);
+   display: inline;
+}
+
+.btn {
+   margin: 0px 10px;
+}
+
+.btn_space {
+   line-height: 40px;
+}
+
+/*BLACK & WHITE STYLE*/
+.game_button_white {
+   background-color: #FFFFFF;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_white a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_black {
+   background-color: #000000;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_black a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*GREY STYLE*/
+.game_button_grey {
+   background-color: #333333;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_grey a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_grey_dark {
+   background-color: #777777;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_grey_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_grey_light {
+   background-color: #bbbbbb;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_grey_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+/*YELLOW STYLE*/
+.game_button_yellow {
+   background-color: #FFDD00;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_yellow a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_yellow_light {
+   background-color: #FFEC73;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_yellow_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_yellow_dark {
+   background-color: #A68F00;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_yellow_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*ORANGE STYLE*/
+.game_button_orange {
+   background-color: #FF7C00;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_orange a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_orange_light {
+   background-color: #FFB773;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_orange_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_orange_dark {
+   background-color: #A65100;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_orange_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*RED STYLE*/
+.game_button_red {
+   background-color: #FF0000;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_red a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_red_light {
+   background-color: #FFCDD2;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_red_light a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_red_dark {
+   background-color: #A31915;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_red_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*MAGENTA STYLE*/
+.game_button_magenta {
+   background-color: #FF0044;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_magenta a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_magenta_light {
+   background-color: #FF7398;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_magenta_light a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_magenta_dark {
+   background-color: #A6002C;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_magenta_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*PURPLE STYLE*/
+.game_button_purple {
+   background-color: #5a19a9;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_purple a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_purple_light {
+   background-color: #c79ff8;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_purple_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_purple_dark {
+   background-color: #30006a;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_purple_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*BLUE STYLE*/
+.game_button_blue {
+   background-color: #0028FF;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_blue a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_blue_light {
+   background-color: #7389FF;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_blue_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_blue_dark {
+   background-color: #001AA6;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_blue_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*CIAN STYLE*/
+.game_button_cian {
+   background-color: #00ACFF;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_cian a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_cian_light {
+   background-color: #73D1FF;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_cian_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_cian_dark {
+   background-color: #0070A6;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_cian_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*GREEN STYLE*/
+.game_button_green {
+   background-color: #00FF4D;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_green a {
+   color: white !important;
+   text-decoration: none;
+}
+
+.game_button_green_light {
+   background-color: #73DD9D;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_green_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_green_dark {
+   background-color: #00A632;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_green_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*LEMON YELLOW STYLE*/
+.game_button_lemon {
+   background-color: #E4FF00;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_lemon a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_lemon_light {
+   background-color: #F0FF73;
+   color: black !important;
+   opacity: .8;
+}
+
+.game_button_lemon_light a {
+   color: black !important;
+   text-decoration: none;
+}
+
+.game_button_lemon_dark {
+   background-color: #94A600;
+   color: white !important;
+   opacity: .8;
+}
+
+.game_button_lemon_dark a {
+   color: white !important;
+   text-decoration: none;
+}
+
+/*end btn personalizados*/
+
+
+/*Estilos de la galeria*/
+
+.galeria {
+   width: 90%;
+   margin: auto;
+   list-style: none;
+   padding: 20px;
+   box-sizing: border-box;
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.galeria img {
+   width: 700px;
+   height: 450px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+   display: none;
+}
+
+.modal:target {
+
+   display: block;
+   position: fixed;
+   background: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.imagen {
+   width: 100%;
+   height: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.imagen a:nth-child(2) {
+   margin: 0;
+   height: 100%;
+   flex-shrink: 2;
+}
+
+/** tamaño de imagen **/
+
+.imagen img {
+   width: 1000px;
+   height: 150%;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+/**
+.cerrar {
+   display: block;
+   background: rgba(255, 4, 4, 0.445);
+   width: 25px;
+   height: 25px;
+   margin: -520px auto;
+   text-align: left;
+   text-decoration: none;
+   font-size: 19px;
+   color: #000;
+   padding: 5px;
+   border-radius: 100%;
+   line-height: 15px;
+} **/
